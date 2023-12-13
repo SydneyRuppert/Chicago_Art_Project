@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>The Chicago Art Institute: My Personal Favorites</h1>
+        </div>
+        <div class="gallery"> <!--TODO Add onc listener for figures-->
+            <div class="wrapper gallery__item--1 ">
+                <figure class="gallery__item " id="fig1" onClick="getArt(this)" >
+                    <div class="wrapper"></div>
+                    <img class="gallery__img" name="image" src="Images/American Collectors(Fred and Marcia Weisman).jpg" alt="american-collectors-fred-and-marcia-weisman" num="102234">
+                    <div class="content">
+                        <h1>American Collectors(Fred and Marcia Weisman)</h1>
+                        <p>Painted by David Hockney(English born 1937)</p>
+                        <p id="test"></p>
+                    </div>
+                </figure>
+            </div>
+            <div class="wrapper gallery__item--2 ">
+                <figure class="gallery__item " id="fig2" onClick="getArt(this)">
+                    <img class="gallery__img" name="image"src="Images/At the Moulin Rouge.jpg" alt="at-the-moulin-rouge" num="61128">
+                    <div class="content">
+                        <h1>At the Moulin Rouge</h1>
+                        <p>Painted by Henri de Toulouse-Lautrec(French, 1864-1901)</p>
+                    </div>
+                </figure>
+            </div>
+            <div class="wrapper gallery__item--3">
+                <figure class="gallery__item " id="fig3" onClick="getArt(this)">
+                    <img class="gallery__img" name="image" src="Images/City Scene with Nuns.jpg" alt="city-scene-with-nuns" num="216534">
+                    <div class="content">
+                        <h1>City Scene with Nuns</h1>
+                        <p>Painted by Robert William Addison(American, 1924-1988)</p>
+                    </div>
+                </figure>
+            </div>
+            <div class="wrapper gallery__item--4">
+                <figure class="gallery__item " id="fig4" onClick="getArt(this)">
+                    <img class="gallery__img" name="image" src="Images/NightHawks.jpg" alt="nighthawks" num="137125">
+                    <div class="content">
+                        <h1>NightHawks</h1>
+                        <p>Painted by Edward Hopper (American, 1882-1967)</p>
+                    </div>
+                </figure>
+            </div>
+            <div class="wrapper gallery__item--5 ">
+                <figure class="gallery__item " id="fig5" onClick="getArt(this)">
+                    <img class="gallery__img" name="image" src="Images/Nightlife.jpg" alt="nightlife" num="117266">
+                    <div class="content">
+                        <h1>Nightlife</h1>  
+                        <p>Painted by Archibald John Motley Jr.(American,1891-1981)</p>
+                    </div>
+                </figure>
+            </div>
+            <div class="wrapper gallery__item--6 ">
+                <figure class="gallery__item " id="fig6" onClick="getArt(this)">
+                    <img class="gallery__img" name="image" src="Images/Paris Street; Rainy Day.jpg" alt="paris-street-rainy-day" num="20684">
+                    <div class="content">
+                        <h1>Paris Street; Rainy Day</h1>
+                        <p>Painted by Gustave Caillebotte(French, 1848-1894)</p>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </div>
+     
+</body>
+</html>

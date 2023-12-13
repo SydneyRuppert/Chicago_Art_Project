@@ -1,0 +1,166 @@
+/* RESET DEFAULT BROWSER STYLES */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.header{
+    font-size: 25px;
+    text-align: center;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: -20px;
+    background-image: url('/Images/white\ \ hallways.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+button{
+    background-color: gray!important;
+    border: 4px solid white;
+    padding: 10px;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: darkslategrey !important;
+    border: 4px solid gray;
+    padding: 10px;
+    border-radius: 3px;
+}
+/* Styles for movie posters */
+.container{
+    width: 40%;
+    margin: 2rem auto;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem;
+}
+
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    padding: 5px ;
+    background-color: black;
+}
+
+.gallery__item--1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 15px;
+}
+
+.gallery__item--2{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 15px;
+}
+
+.gallery__item--3{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    font-size: 15px;
+}
+
+.gallery__item--4{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    font-size: 15px;
+}
+
+.gallery__item--5{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    font-size: 15px;
+}
+
+.gallery__item--6{
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    font-size: 15px;
+}
+.gallery__item{
+    position: relative;
+}
+.buttoncontain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+    padding: 10px;
+}
+
+
+.container{
+    width: 40%;
+    margin: 2rem auto;
+}
+
+/*Hover feature*/
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.content{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.content:hover{
+    opacity: 1;
+
+}
+.buttoncontain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+    padding: 10px;
+}
+.container{
+    width: 40%;
+    margin: 2rem auto;
+}
