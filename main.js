@@ -52,20 +52,27 @@ function setImage(){
 }*/
 
 
-async function getArt(Id){
-    let name = document.getElementById("alt");
-    let tag = document.getElementById("num");
-    //let name = document.getElementsByTagName('img')[img_index].getAttribute[3].value;
-    //let tag = document.getElementsByTagName('img')[img_index].getAttribute[4].value;
-    let request= new Request(`https://www.artic.ed/artworks/${tag}/${name}`,{
-        methodd: 'GET'
+async function getArt(id){
+    let img =document.getElementById(id)
+    let name = img.getAttribute("alt");
+    let tag = img.getAttribute("num");
+    //let name = document.getElementsByTagName('img')[img_index].attributes[3].value;
+   // let tag = document.getElementsByTagName('img')[img_index].attributes[4].value;
+    let request= new Request(`https://www.artic.edu/artworks/${tag}/${name}`,{
+        method: 'GET'
     })
-    let result= await fetch(request)
-    let response= await result.json()
-    console.log(response)
-    let url = `https://api.artic.edu/api/v1/artworks/${alt}`;
-    window.location.replace(url)
-    console.log(url)
+    try {
+        let result= await fetch(request);
+        let response= await result.json()
+        console.log(response)
+        let url = `https://www.artic.edu/artworks/${tag}/${name}`;
+        window.location.replace(url)
+        console.log(url)
+
+    }catch (error){
+        console.error("Error",error);
+    }
+
 }
 
 
