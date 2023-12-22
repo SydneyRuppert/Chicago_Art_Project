@@ -10,11 +10,12 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>The Chicago Art Institute: My Personal Favorites</h1>
+            <h2>The Chicago Art Institute:</h2>
+
         </div>
         <div class="gallery"> <!--TODO Add onc listener for figures-->
             <div class="wrapper gallery__item--1 ">
-                <figure class="gallery__item " id="fig1" onClick="getArt(this.id)" >
+                <figure class="gallery__item " id="fig1"  >
                     <div class="wrapper"></div>
                     <img class="gallery__img" name="image" src="Images/American Collectors(Fred and Marcia Weisman).jpg" alt="american-collectors-fred-and-marcia-weisman" num="102234">
                     <div class="content">
@@ -25,7 +26,7 @@
                 </figure>
             </div>
             <div class="wrapper gallery__item--2 ">
-                <figure class="gallery__item " id="fig2" onClick="getArt(this.id)">
+                <figure class="gallery__item " id="fig2" >
                     <img class="gallery__img" name="image"src="Images/At the Moulin Rouge.jpg" alt="at-the-moulin-rouge" num="61128">
                     <div class="content">
                         <h1>At the Moulin Rouge</h1>
@@ -34,7 +35,7 @@
                 </figure>
             </div>
             <div class="wrapper gallery__item--3">
-                <figure class="gallery__item " id="fig3" onClick="getArt(this.id)">
+                <figure class="gallery__item " id="fig3" >
                     <img class="gallery__img" name="image" src="Images/City Scene with Nuns.jpg" alt="city-scene-with-nuns" num="216534">
                     <div class="content">
                         <h1>City Scene with Nuns</h1>
@@ -43,7 +44,7 @@
                 </figure>
             </div>
             <div class="wrapper gallery__item--4">
-                <figure class="gallery__item " id="fig4" onClick="getArt(this.id)">
+                <figure class="gallery__item " id="fig4" >
                     <img class="gallery__img" name="image" src="Images/NightHawks.jpg" alt="nighthawks" num="137125">
                     <div class="content">
                         <h1>NightHawks</h1>
@@ -52,7 +53,7 @@
                 </figure>
             </div>
             <div class="wrapper gallery__item--5 ">
-                <figure class="gallery__item " id="fig5" onClick="getArt(this.id)">
+                <figure class="gallery__item " id="fig5" >
                     <img class="gallery__img" name="image" src="Images/Nightlife.jpg" alt="nightlife" num="117266">
                     <div class="content">
                         <h1>Nightlife</h1>  
@@ -61,7 +62,7 @@
                 </figure>
             </div>
             <div class="wrapper gallery__item--6 ">
-                <figure class="gallery__item " id="fig6" onClick="getArt(this.id)">
+                <figure class="gallery__item " id="fig6" >
                     <img class="gallery__img" name="image" src="Images/Paris Street; Rainy Day.jpg" alt="paris-street-rainy-day" num="20684">
                     <div class="content">
                         <h1>Paris Street; Rainy Day</h1>
@@ -69,8 +70,11 @@
                     </div>
                 </figure>
             </div>
+           <button onClick="getArt();">Click Here To See The Whole Collection.</div>
         </div>
+
     </div>
+
      
 </body>
 </html>

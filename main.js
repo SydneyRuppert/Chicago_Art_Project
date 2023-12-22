@@ -52,70 +52,34 @@ function setImage(){
 }*/
 
 
-async function getArt(id){
-    let img =document.getElementById(id)
-    let name = img.getAttribute("alt");
-    let tag = img.getAttribute("num");
-    //let name = document.getElementsByTagName('img')[img_index].attributes[3].value;
-   // let tag = document.getElementsByTagName('img')[img_index].attributes[4].value;
-    let request= new Request(`https://www.artic.edu/artworks/${tag}/${name}`,{
-        method: 'GET'
-    })
-    try {
-        let result= await fetch(request);
-        let response= await result.json()
-        console.log(response)
-        let url = `https://www.artic.edu/artworks/${tag}/${name}`;
-        window.location.replace(url)
-        console.log(url)
+// async function getArt(figure){
+//     let img =document.getElementById(figure)
+//     let name = img.getAttribute("alt");
+//     let tag = img.getAttribute("num");
+//     //let name = document.getElementsByTagName('img')[img_index].attributes[3].value;
+//    // let tag = document.getElementsByTagName('img')[img_index].attributes[4].value;
+// //    let request= new Request(`https://www.artic.edu/artworks/${tag}/${name}`,{
+// //        method: 'GET'
+// //     })
 
-    }catch (error){
-        console.error("Error",error);
-    }
+
+//     let request = `https://www.artic.edu/artworks/${tag}/${name}`
+//     try {
+//         let result= await fetch(request,{mode:"no-cors"});
+//         let response= await result.json()
+//         console.log(response)
+//         let url = `https://www.artic.edu/artworks/${tag}/${name}`;
+//         window.location.replace(url)
+//         console.log(url)
+
+//     }catch (error){
+//         console.error("Error",error);
+//     }
+
+// }
+function getArt(){
+    let url=`https://www.artic.edu/collection`
+    window.location.replace(url)
 
 }
-
-
-
-   /**
-    * 
-    * 
-function getArt(alt,event){
-        switch(alt){
-            case 'fig1': {
-                event.stopPropagation();
-                clickedEvent(0,3)
-                break;
-            }
-            case 'fig2': {
-                event.stopPropagation();
-                clickedEvent(1,3)
-                break;
-            }
-            case 'fig3': {
-                event.stopPropagation();
-                clickedEvent(2,3)
-                break;
-            }
-            case 'fig4': {
-                event.stopPropagation();
-                clickedEvent(3,0)
-                break;
-            }
-            case 'fig5': {
-                event.stopPropagation();
-                clickedEvent(4,0)
-                break;
-            }
-            case 'fig6': {
-                event.stopPropagation();
-                clickedEvent(5,1)
-                break;
-            }
-        }
-    }
-    * 
-    * 
-    * 
-    */
 
